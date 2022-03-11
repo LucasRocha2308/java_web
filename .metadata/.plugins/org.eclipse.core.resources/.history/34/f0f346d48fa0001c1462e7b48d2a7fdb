@@ -1,0 +1,5 @@
+package br.con.isidrocorp.ecommerce.model;
+
+public class Produto {
+
+}

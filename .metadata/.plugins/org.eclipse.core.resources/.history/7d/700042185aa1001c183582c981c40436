@@ -1,0 +1,14 @@
+package br.com.isidrocorp.ecommerce.model;
+
+import java.time.LocalDate;
+
+public class Pedido {
+
+	private Integer numero;
+	private LocalDate data;
+	private Double valorBruto;
+	private Double desconto;
+	private Double valorTotal;
+	
+	
+}

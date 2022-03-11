@@ -1,0 +1,23 @@
+package br.con.isidrocorp.ecommerce.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="cliente")
+public class Cliente {
+
+	private Integer numero;
+	private String nome;
+	private String cpf;
+	private String email;
+	private Integer telefone;
+	private String logradouro;
+	private Integer num_res;
+	private String compl;
+	private String bairro;
+	private String cidade;
+	private String estado;
+	private String cep;
+	
+}

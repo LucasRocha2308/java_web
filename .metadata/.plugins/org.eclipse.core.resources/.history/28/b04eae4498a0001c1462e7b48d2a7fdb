@@ -1,0 +1,10 @@
+package br.com.isidrocorp.ecommerce.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import br.con.isidrocorp.ecommerce.model.Produto;
+
+public interface ProdutoDAO extends CrudRepository<Produto, Integer>{
+	
+	
+}

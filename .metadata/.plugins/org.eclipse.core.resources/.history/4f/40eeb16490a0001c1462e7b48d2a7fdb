@@ -1,0 +1,24 @@
+package br.con.isidrocorp.ecommerce.model;
+
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Produto {
+	
+	@Id
+	@Column(name="codigo")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer codigo;
+	
+	@Column(name="nome", length = 50, nullable = false)
+	private String nome;
+	private String descricao;
+	private Double preco;
+	private Integer qtdEstoque;
+	private String linkFoto;
+	
+	
+	
+}

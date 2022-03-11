@@ -1,0 +1,23 @@
+package br.com.isidrocorp.ecommerce.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import br.com.isidrocorp.ecommerce.dao.ProdutoDAO;
+import br.con.isidrocorp.ecommerce.model.Produto;
+
+public class ProdutoController {
+
+	@Autowired
+	private ProdutoDAO dao;
+	
+	@GetMapping("/produtos")
+	public List<Produto> recuperarTodos(){
+		List<Produto> lista;
+		lista = (List<Produto>)dao.findAll();
+		return lista;
+	}
+	
+}

@@ -1,0 +1,14 @@
+package br.con.isidrocorp.ecommerce.model;
+
+public class Produto {
+	@Id
+	@Column(name="codigo")
+	@GenetatedValue(strategy = Generation.IDENTITY)
+	private Integer codigo;
+	private String nome;
+	private String descricao;
+	private Double preco;
+	private Integer qtdEstoque;
+	private String linkFoto;
+	
+}

@@ -1,0 +1,27 @@
+package br.con.isidrocorp.ecommerce.model;
+
+public class Departamento {
+	private Integer numero;
+	private String nome;
+	private Integer andar;
+	
+	public Integer getNumero() {
+		return numero;
+	}
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Integer getAndar() {
+		return andar;
+	}
+	public void setAndar(Integer andar) {
+		this.andar = andar;
+	}
+	
+}

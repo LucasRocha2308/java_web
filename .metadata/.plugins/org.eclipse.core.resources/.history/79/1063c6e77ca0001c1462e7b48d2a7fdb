@@ -1,0 +1,9 @@
+package br.con.isidrocorp.ecommerce.model;
+
+import javax.persistence.Entity;
+
+@Entity
+@Table(name="cliente")
+public class Cliente {
+
+}

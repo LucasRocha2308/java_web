@@ -1,0 +1,34 @@
+package br.com.isidrocorp.ecommerce.model;
+
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="pedido")
+public class Pedido {
+
+	@Id
+	@Column(name = "numero")
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer numero;
+	
+	@Column(name = "data")
+	private LocalDate data;
+	
+	@Column(name = "valor_bruto")
+	private Double valorBruto;
+	
+	@Column(name = "desconto")
+	private Double desconto;
+	
+	@Column(name = "valor_total")
+	private Double valorTotal;
+	
+	
+}

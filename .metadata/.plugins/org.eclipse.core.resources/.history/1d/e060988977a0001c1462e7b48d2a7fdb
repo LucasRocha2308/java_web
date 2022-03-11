@@ -1,0 +1,44 @@
+package br.con.isidrocorp.ecommerce.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="departamento")
+public class Departamento {
+	
+	@Id
+	@Column(name = "numero", nullable = false)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer numero;
+	
+	@Column(name = "nome", length = 50, nullable = false)
+	private String nome;
+	
+	@Column(name = "andar", nullable = true)
+	private Integer andar;
+	
+	public Integer getNumero() {
+		return numero;
+	}
+	public void setNumero(Integer numero) {
+		this.numero = numero;
+	}
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public Integer getAndar() {
+		return andar;
+	}
+	public void setAndar(Integer andar) {
+		this.andar = andar;
+	}
+	
+}
